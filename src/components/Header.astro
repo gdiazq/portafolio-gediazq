@@ -1,0 +1,29 @@
+---
+interface Props {
+	acerca: string;
+    experiencia: string;
+    proyectos: string;
+    habilidades: string;
+    educacion: string;
+    certificados: string;
+    contactame: string;
+
+}
+
+const { acerca, experiencia, proyectos, habilidades, educacion, certificados, contactame } = Astro.props;
+
+---
+
+<header class="py-3.5">
+    <nav class="fixed inset-x-0">
+        <ul class="flex flex-row justify-center space-x-3">
+            <li><a class="font-semibold" href="#">{acerca}</a></li>
+            <li><a class="font-semibold" href="#">{experiencia}</a></li>
+            <li><a class="font-semibold" href="#">{proyectos}</a></li>
+            <li><a class="font-semibold" href="#">{habilidades}</a></li>
+            <li><a class="font-semibold" href="#">{educacion}</a></li>
+            <li><a class="font-semibold" href="#">{certificados}</a></li>
+            <li><a class="font-semibold" href="#">{contactame}</a></li>
+        </ul>
+    </nav>
+</header>

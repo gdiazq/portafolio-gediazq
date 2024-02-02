@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Layout title="Bienvenido al portafolio de Guillermo">
+	<main class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+		<Header
+			acerca="Acerca de mi"
+			experiencia="Experiencia Laboral"
+			proyectos="Proyectos"
+			habilidades="Habilidades"
+			educacion="Educacion"
+			certificados="Certificados"
+			contactame="Contáctme"
+		/>
+		<Hero/>
+	</main>
+</Layout>
